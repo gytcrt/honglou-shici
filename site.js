@@ -42,7 +42,7 @@
       for (var i = 0; i < idx.length && out.length < 50; i++) {
         var r = idx[i], p = r.x.indexOf(s), where = '';
         if (r.t.indexOf(s) >= 0 || r.a.indexOf(s) >= 0) where = r.t; else if (p >= 0) where = '…' + r.x.slice(Math.max(0, p - 12), p + s.length + 14) + '…'; else continue;
-        out.push('<li><a href="' + r.id + '.html"><b>' + esc(r.t) + '</b><span>第' + cn(r.c) + '回' + (r.a ? ' · ' + esc(r.a) : '') + '</span><em>' + esc(where) + '</em></a></li>');
+        out.push('<li><a href="' + r.id + '"><b>' + esc(r.t) + '</b><span>第' + cn(r.c) + '回' + (r.a ? ' · ' + esc(r.a) : '') + '</span><em>' + esc(where) + '</em></a></li>');
       }
       hits.innerHTML = out.join('') || '<li><span class="who">没有找到。</span></li>';
     };
