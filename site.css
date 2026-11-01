@@ -8,6 +8,7 @@
 html, body { margin: 0; }
 body { background: var(--bg); color: var(--fg); font: 14px/1.75 var(--sans); min-height: 100vh; display: flex; flex-direction: column; }
 a { color: inherit; text-decoration: none; }
+a.lnk { color: var(--rouge); text-decoration: underline; text-underline-offset: 3px; }
 button { font: inherit; cursor: pointer; }
 .in { max-width: 720px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
 header.top { border-bottom: 1px solid var(--rule); }
